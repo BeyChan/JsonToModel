@@ -13,7 +13,7 @@
 		41103A4922E98671000D1926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41103A4822E98671000D1926 /* Assets.xcassets */; };
 		41103A4C22E98671000D1926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41103A4A22E98671000D1926 /* LaunchScreen.storyboard */; };
 		41103A6022E98FF0000D1926 /* MDCodable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41103A5F22E98FF0000D1926 /* MDCodable+Helper.swift */; };
-		416F48D522EB06B400E2C47B /* KeyedDecodingContainer+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F48D422EB06B400E2C47B /* KeyedDecodingContainer+Helper.swift */; };
+		416F48D522EB06B400E2C47B /* MDKeyedDecodingContainer+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F48D422EB06B400E2C47B /* MDKeyedDecodingContainer+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		41103A4B22E98671000D1926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41103A4D22E98671000D1926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41103A5F22E98FF0000D1926 /* MDCodable+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MDCodable+Helper.swift"; sourceTree = "<group>"; };
-		416F48D422EB06B400E2C47B /* KeyedDecodingContainer+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Helper.swift"; sourceTree = "<group>"; };
+		416F48D422EB06B400E2C47B /* MDKeyedDecodingContainer+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MDKeyedDecodingContainer+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				41103A4122E9866F000D1926 /* AppDelegate.swift */,
 				41103A4322E9866F000D1926 /* ViewController.swift */,
 				41103A5F22E98FF0000D1926 /* MDCodable+Helper.swift */,
-				416F48D422EB06B400E2C47B /* KeyedDecodingContainer+Helper.swift */,
+				416F48D422EB06B400E2C47B /* MDKeyedDecodingContainer+Helper.swift */,
 				41103A4522E9866F000D1926 /* Main.storyboard */,
 				41103A4822E98671000D1926 /* Assets.xcassets */,
 				41103A4A22E98671000D1926 /* LaunchScreen.storyboard */,
@@ -144,7 +144,7 @@
 				41103A4422E9866F000D1926 /* ViewController.swift in Sources */,
 				41103A6022E98FF0000D1926 /* MDCodable+Helper.swift in Sources */,
 				41103A4222E9866F000D1926 /* AppDelegate.swift in Sources */,
-				416F48D522EB06B400E2C47B /* KeyedDecodingContainer+Helper.swift in Sources */,
+				416F48D522EB06B400E2C47B /* MDKeyedDecodingContainer+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
