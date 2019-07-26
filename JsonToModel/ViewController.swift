@@ -10,7 +10,7 @@ import UIKit
 
 struct MDBaseModel<T: Codable>: Codable {
     var data: T?
-    var code: Int?
+    var code: String?
     var message: String?
 }
 //首先定义一个结构体Person用来表示数据Model
@@ -27,6 +27,9 @@ struct Person: Codable {
     
 }
 
+
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -37,17 +40,37 @@ class ViewController: UIViewController {
             print(person1)
         }
         
-        let p1Dic = ["data": ["name":"marvin","age":30,"sex":"男"],"code":2,"message": "OK?"] as [String : Any]
-        if let base = MDBaseModel<Person>.decodeJSON(from: p1Dic) {
-            print(base.data!.userName ?? "")
+
+        
+        let personJson = """
+{
+    "data": [
+        {
+            "name": "marvin",
+            "age": 21,
+            "sex": "男"
+        },
+        {
+            "name": "marvin",
+            "age": 21,
+            "sex": "男"
+        }
+    ],
+    "code": 2,
+    "message": "eew"
+}
+"""
+        let p1Dic = ["data": ["name":"marvin","age":30,"sex":"男"],"code":"2","message": "OK?"] as [String : Any]
+        if let base = MDBaseModel<[Person]>.decodeJSON(from: personJson) {
+            print(base.data?.first?.userName ?? "")
         }
         
         
-        if let person = Person.decodeJSON(from: p1Dic, designatedPath: "data") {
-            print(person.userName ?? "")
-            let jsonString = person.toJSONString()
-            print(jsonString!)
-        }
+//        if let person = Person.decodeJSON(from: p1Dic, designatedPath: "data") {
+//            print(person.userName ?? "")
+//            let jsonString = person.toJSONString()
+//            print(jsonString!)
+//        }
         
         
         // Do any additional setup after loading the view, typically from a nib.
